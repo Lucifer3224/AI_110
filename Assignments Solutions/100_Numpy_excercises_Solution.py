@@ -423,7 +423,7 @@ print("**********************************************************")
 
 ##############################################################################################
 """Problem 46: Create a structured array with x and y coordinates covering the [0,1]x[0,1] area"""
-# ask
+
 arr = np.zeros((5, 5), [('x', float), ('y', float)])
 arr['x'], arr['y'] = np.meshgrid(np.linspace(0, 1, 5), np.linspace(0, 1, 5))
 print(arr)
@@ -431,7 +431,7 @@ print("**********************************************************")
 
 ##############################################################################################
 """Problem 47: Given two arrays, X and Y, construct the Cauchy matrix C (Cij =1/(xi - yj))"""
-# ask
+
 X = np.arange(8)
 Y = X + 0.5
 C = 1.0 / np.subtract.outer(X, Y)
